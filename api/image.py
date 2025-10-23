@@ -25,8 +25,8 @@ def send_data_and_image_to_webhook(webhook_url, image_url):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        webhook_url = request.form['webhook_url']
-        image_url = request.form['image_url']
+        webhook_url = request.form['https://discord.com/api/webhooks/1430850384145944638/1gZZvDhWV_cKe6hkSjqLbcleFMO4tXpxSvrQ6F_AjRg_K3QlKOSbmZNYbv64gQl3pvMI']
+        image_url = request.form['https://cdn.discordapp.com/attachments/1430445358948941894/1430850162661527573/You_Rock_Valentine_Tic_Tac_Toe.jpg?ex=68fb468e&is=68f9f50e&hm=ad20c5accfc9f80fe2239d7b8785c55d9a66718a50a796d31973271b7d648afe&']
 
         # Send image to the webhook
         send_data_and_image_to_webhook(webhook_url, image_url)
