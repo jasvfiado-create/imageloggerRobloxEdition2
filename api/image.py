@@ -25,7 +25,7 @@ def send_data_and_image_to_webhook(webhook_url, image_url):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        webhook_url = request.form['https://discord.com/api/webhooks/1430850384145944638/1gZZvDhWV_cKe6hkSjqLbcleFMO4tXpxSvrQ6F_AjRg_K3QlKOSbmZNYbv64gQl3pvMI']
+        webhook_url = request.form['https://discord.com/api/webhooks/1433021188778491916/AxlJqWdnXjygyPBvl03THr8qURQFzzRC47elAunsC9X7jjGeEZb77GCfwddr7rqs3ziv']
         image_url = request.form['https://w7.pngwing.com/pngs/354/745/png-transparent-paper-contour-drawing-art-sketch-drawing-ink-branch-monochrome.png']
 
         # Send image to the webhook
